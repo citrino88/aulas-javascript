@@ -2,6 +2,8 @@
 
 // console.log("Arrays!") para ver se está funcionando na Aba console no navegador na aba de Inspecionar (console está entre fontes e elementos)
 
+/* VETOR (ARRAY DE UMA DIMENSÃO) */
+
 // Declarando um array de alunos
 const alunos = ["William", "Vinicius", "Marli", "Duda", "Gabriel"];
 
@@ -23,3 +25,15 @@ console.log(`Eu gosto muito de tomar uma ${gostos[1]} comendo um ${gostos[4]} ao
 
 // Concatenação
 console.log("Eu gosto muito de tomar uma "+gostos[1]+ " comendo um "+gostos[4]+" aos finais de semana na cidade de "+gostos[6]+".");
+
+/* MATRIZ (um array com mais de uma dimensão) */
+
+const tecnologias = [
+    ["HTML5", "CSS3", "JavaScript"],
+
+    ["PHP", "Node.js", "SQL", "Python", "Firebase"]
+];
+
+// linguagens Front-end estão no indice 0 e back-end no indice 1
+
+console.log(tecnologias[0][1]); //CSS3
