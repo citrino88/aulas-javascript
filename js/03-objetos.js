@@ -54,3 +54,28 @@ const pessoa = {
 console.log(
     `O ${pessoa.nome} tem ${pessoa.medidasFisicas.peso} kg e ${pessoa.medidasFisicas.altura} metros de altura. Contato: ${pessoa.telefones[1]}.`
 )
+
+// Array de objetos
+const livros = [
+    {
+        titulo: "Harry Potter",
+        autor: "J.K. Rowling"
+    },
+    {
+        titulo: "Crônicas de Nárnia",
+        autor: "C.S. Lewis"
+    },
+    {
+        titulo: "Crônicas de Olam",
+        autor: "L.L. Wurlitzer"
+    }
+];
+
+console.log(livros); //no console aparece q é um array com 3 objetos {...}
+console.log(livros[1].titulo); //Crônicas de Nárnia
+
+console.log("----------------");
+
+/* Alternativa para exibição e análise  */
+
+console.table(livros);
