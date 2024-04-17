@@ -50,3 +50,29 @@ if(idade >= 18){
 
 console.log(`${usuario} é ${texto} de idade.`); // este é outro exemplo de fazer usando apenas uma saida só de "impressão" no console
 
+console.log("if/else usando ternário ?:");
+let texto2 = idade >= 18; //dá valor boolean True se a idade lá em cima do Ozzy estiver maior ou igual a 18.
+console.log(texto2);
+
+//usando ternario ?:
+let texto3 = idade >= 18 ? "maior" : "menor";
+console.log(texto3);
+console.log(`${usuario} é ${texto3} de idade.`);
+
+//Aplicando ternario direto dentro do template string
+console.log(`${usuario} é ${idade >= 18 ? "maior" : "menor"} de idade.`);
+
+// Condicional ENCADEADA/SUCESSIVA
+
+let texto4;
+
+if(idade >= 60){
+    texto4 = "idoso(a)";
+} else if (idade >= 18){
+    texto4 = "adulto(a)";
+} else {
+    texto4 = "menor de idade";
+}
+console.log(`${usuario} tem ${idade} anos e é ${texto4}. `);
+
+// ir testando os valores em idade lá em cima, no caso do Ozzy, trocando as idades, e ver o que aparece para qualquer idade, ex: 55, 8, 19, 60, etc.
