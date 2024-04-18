@@ -78,3 +78,19 @@ console.log(`${usuario} tem ${idade} anos e é ${texto4}. `);
 // ir testando os valores em idade lá em cima, no caso do Ozzy, trocando as idades, e ver o que aparece para qualquer idade, ex: 55, 8, 19, 60, etc.
 
 console.log("--------------");
+
+// Condicional switch/case
+//switch=avalie, case = olhe esse caso, 
+
+let opcao = 1;
+let mensagem;
+
+switch (opcao) {
+    case 1: mensagem = "Informações"; break;
+    case 2: mensagem = "Reclamações"; break;
+    case 3: mensagem = "Elogios"; break;
+    default: mensagem = "Falar com o atendente"; break;
+}
+
+console.log("Opção escolhida: "+opcao);
+console.log("Mensagem: "+mensagem);
