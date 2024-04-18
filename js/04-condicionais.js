@@ -76,3 +76,5 @@ if(idade >= 60){
 console.log(`${usuario} tem ${idade} anos e é ${texto4}. `);
 
 // ir testando os valores em idade lá em cima, no caso do Ozzy, trocando as idades, e ver o que aparece para qualquer idade, ex: 55, 8, 19, 60, etc.
+
+console.log("--------------");
