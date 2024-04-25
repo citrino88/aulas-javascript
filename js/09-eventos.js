@@ -58,4 +58,13 @@ botao.addEventListener("click", function() {
     /* Usamos para alternar entre os estados de classe (aplicada e não aplicada) */
     pagina.classList.toggle("noturno");
     divContainer.classList.toggle("noturno");
+
+    /* 🔥 Desafio!!! 🔥 */
+
+    /* 1) Aplicar um efeito de mudança de cores suave */
+    pagina.style.transition = "2s";
+    divContainer.style.transition ="2s"
+    /* 2) Fazer o botão muda de texto, ou seja, inicia com o texto "Ativar" e troca para texto "Desativar" conforme o que estiver acontecendo. */
+    botao.textContent = "Desativar";
+    
 });
