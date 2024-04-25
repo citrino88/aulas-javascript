@@ -69,7 +69,7 @@ backEnd.style.color = "red";
 backEnd.style.textAlign = "center";
 
 // Aplicação de classes CSS via JavaScript
-titulo.classeList.add("destaque");
+titulo.classList.add("destaque");
 
 const listaDeEditores = [
     {
@@ -85,4 +85,36 @@ const listaDeEditores = [
         finalidade: "Desenvolvimento de aplicações IOS"
     }
 
-]
+];
+
+// Acessando/selecionando a lista que será usada no HTML
+const lista = document.querySelector(".lista");
+console.log(lista);
+
+/* Percorrer o array de listaDeEditores, criar os itens <li> com o conteúdo do
+array e adicioná-los a lista HTML. */
+
+// for( variavel / constante de acesso of arrayComDadosQueQueremosAcessar){}
+for (const editor of listaDeEditores) {
+    console.log(editor.nome);
+
+
+    // Etapa 1: criar elemento <li>
+    // aqui eu crio a tag ==> document.createElement("li");
+    const item = document.createElement("li"); //guardo na memoria
+
+    // Etapa 2: adicionar conteúdo ao novo elemento
+    item.innerHTML = `<b>${editor.nome}</b>: ${editor.finalidade}`;
+
+    // Etapa 3: adicionar o elemento a lista <ol>
+    lista.appendChild(item);
+};
+
+/* Criando/configurando atributo HTML via JS */
+const linksDeReferencia = document.querySelectorAll(".referencias a");
+console.log(linksDeReferencia);
+
+for(const link of linksDeReferencia){
+    console.log(link);
+    link.setAttribute("target", "_blank");
+}
