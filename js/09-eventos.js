@@ -65,6 +65,11 @@ botao.addEventListener("click", function() {
     pagina.style.transition = "2s";
     divContainer.style.transition ="2s"
     /* 2) Fazer o botão muda de texto, ou seja, inicia com o texto "Ativar" e troca para texto "Desativar" conforme o que estiver acontecendo. */
-    botao.textContent = "Desativar";
+    
+    if (botao.textContent == "Ativar"){
+        botao.textContent = "Desativar"
+    }else{
+        botao.textContent = "Ativar"
+    }
     
 });
