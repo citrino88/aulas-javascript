@@ -19,6 +19,7 @@ switch/case (escolha/caso)
  <= menor ou igual a 
  != diferente de
  == igualdade exata()
+ === estritamente igual
 
  */
 
